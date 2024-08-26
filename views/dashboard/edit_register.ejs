@@ -1,0 +1,53 @@
+<%- include("header.ejs") %>
+
+<div class="container-fluid "  style="height: 800px; transform: translateY(100px);">
+    <div class="row justify-content-center " style="height: 800px; ">
+      <div class="col-md-8 ">
+        <div class="card h-100" >
+          <div class="card-body ">
+            <h1 class="card-title text-center mb-4 fw-bold text-uppercase">Register</h1>
+            <form method="post"  style="font-size: 20px; padding: 50px;" >
+              <div class="row" >
+                <div class="col-md-6 mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" class="form-control" style="height: 50px; font-size: 20px; border-radius: 25px;" id="username" name="username" value="<%=register.username %>" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" style="height: 50px; font-size: 20px; border-radius: 25px;" id="email" name="email" value="<%=register.email%>" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" style="height: 50px; font-size: 20px; border-radius: 25px;" id="password" name="password" value="<%=register.password %>" required>
+              </div>
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" style="height: 50px; font-size: 20px; border-radius: 25px;" id="confirmPassword" name="confirmPassword" value="<%=register.confirmpassword %>" required>
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" style="height: 50px; font-size: 20px; border-radius: 25px;" id="address" value="<%=register.address %>" name="address" rows="3"></textarea>
+              </div>
+              <div class="row">
+               
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" style="height: 50px; font-size: 20px; border-radius: 25px;" id="phone" value="<%=register.phone %>" name="phone">
+                </div>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="terms" required>
+                <label class="form-check-label" for="terms">
+                  Agree to terms and conditions
+                </label>
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary mt-5 p-3" style="font-size: 20px; width: 400px; transform: translatex(380px); border-radius: 25px;">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

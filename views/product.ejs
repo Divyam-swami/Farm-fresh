@@ -1,0 +1,31 @@
+<%- include("./common/header.ejs") %>
+
+  <div class="container product-container" >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="product-section">
+          <h2 class="fw-bold text-center p-4">Our Products</h2>
+
+          <div class="row" >
+            <!-- Product 1 -->
+            <%if(pageproduct.length>0){%>
+              <% for(var i=0; i<pageproduct.length; i++){%>
+            <div class="col-md-4">
+              <div class="product">
+                <img src="<%= pageproduct[i].productimage %>" alt="Product 1" class="img-fluid">
+                <h4 class="display-5 fw-bolder mt-4"><%= pageproduct[i].productname %>
+                <span class="mx-5 display-6"><strong><%= pageproduct[i].price %></strong>/kg</span></h4>
+                <a href="" class="btn ">Add to Cart</a>
+              </div>
+            </div>
+            <%} %>
+            <% } else{ %>
+              record not found  
+          <%} %>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include("./common/footer.ejs") %>

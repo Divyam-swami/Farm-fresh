@@ -1,0 +1,56 @@
+
+<%- include("header.ejs") %>
+    
+<section class="header dashboard-section mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 dashboard-text1">
+                <%- include("left.ejs") %>
+            </div>
+            <div class="col-9 dashboard-text2">
+                <div class="container-fluid mt-5 product-form">
+                    <h2 class=" text-uppercase fw-bold display-4 border-bottom border-2 text-md-center w-100 ">Add Product</h2>
+                    
+                    <form class="p-2" method="post" >
+                        <div class="col-md-12 d-md-flex">
+                        <div class="form-group col-6">
+                            <label for="productName">Product Name</label>
+                    <form class="p-2" method="post" action="/addproduct">
+                            <input type="text" class="form-control" name="productName" placeholder="Enter product name" value="<%=product.productname %>" required>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="productPrice">Price</label>
+                            <input type="number" class="form-control" value="<%=product.price %>"  name="productPrice" placeholder="Enter product price" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-md-flex">
+                       
+                        <div class="form-group col-6">
+                            <label for="productCategory">Category</label>
+                            <select class="form-control" id="productCategory" value="<%=product.category %>" name="productCategory" required>
+                                <option value="">Select category</option>
+                                <option>fruits</option>
+                                <option>vegetable</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                       
+                        <div class="form-group col-6">
+                            <label for="productImage">Product Image</label>
+                            <input type="file" class="form-control-file " id="productImage"  name="productimage">
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="productDescription">Product Description</label>
+                            <textarea class="form-control" id="productDescription" value="<%=product.description %>" name="productDescription" rows="3" placeholder="Enter product description"></textarea>
+                        </div>  
+                    
+                        <button type="submit" class="main-btn">Add product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <%- include("footer.ejs") %>
+    

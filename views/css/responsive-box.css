@@ -1,0 +1,110 @@
+@media (max-width: 1170px) {
+  /* general css */
+  .section-subtitle {
+    max-width: 60%;
+  }
+  /* navbar */
+}
+@media (max-width: 991px) {
+  /* general css */
+  .about .banner-section,
+  .product .banner-section,
+  .gallary .banner-section,
+  .contact .banner-section {
+    padding-top: 12.5rem;
+    padding-bottom: 3rem;
+  }
+  /* navbar */
+  .header .navbar {
+    background-size: cover;
+    padding: 2rem;
+  }
+
+  .header .navbar-nav {
+    margin-top: 2rem;
+  }
+
+  .header .navbar-nav .nav-link {
+    padding: 0.2rem, 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .header .header-right span {
+    padding: 0.2rem, 0.5rem;
+  }
+}
+@media (max-width: 767px) {
+  /* general css */
+  body {
+    font-size: 8px;
+  }
+  .section-subtitle {
+    max-width: 80%;
+  }
+
+  /* banner section */
+  .banner-section {
+    min-height: 70vh;
+  }
+  .banner-section .carousel-item {
+    height: 70vh;
+  }
+
+  .landing-about-section h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .landing-about-section p {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .landing-about-section {
+    background: url(../images/_58a1f69c-e0c2-467f-a6ab-6b02083cdb5d.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (max-width: 590px) {
+  /* general css */
+  body,
+  html {
+    font-size: 7px;
+  }
+  /* header */
+  .header-scrolled {
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 97%;
+    z-index: 999;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .landing-about-section h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .landing-about-section p {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .landing-about-section {
+    background: url(../images/_58a1f69c-e0c2-467f-a6ab-6b02083cdb5d.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .landing-product-section .product-card .product-detail {
+    bottom: -80rem;
+  }
+}

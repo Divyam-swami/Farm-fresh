@@ -1,0 +1,75 @@
+.contact-section  {
+    background: url(../images/banner-slide/Banner-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  height: 100vh;
+  
+}
+
+.contact-form {
+    width: 80%;
+    background-color: white;
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    margin: auto;
+    transform: translateY(80px);
+    font-weight: 600;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.contact-title{
+    width: 100%;
+    font-weight: 800;
+    border-bottom: 5px solid rgb(54,238,18);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.contact-form input{
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+
+    text-align: center;
+}
+.contact-form input:focus{
+        border: 2px solid rgb(54,238,18);
+        box-shadow: none;
+}
+
+
+
+.contact-form textarea{
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    text-align: center;
+}
+
+.contact-form textarea:focus{
+ border: 2px solid rgb(54,238,18);
+ box-shadow: none;
+}
+.contact-form button{
+    font-size: 16px;
+    background-color: rgb(54, 238, 18);
+    margin-top: 50px;
+    font-weight: 800;    
+    width: 100%;    
+
+}
+
+.contact-form button:hover{
+    background: transparent;
+    backdrop-filter: blur(80px);
+    
+}
+.form-control:focus {
+    box-shadow: none;
+}
+

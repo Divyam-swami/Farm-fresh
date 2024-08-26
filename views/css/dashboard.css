@@ -1,0 +1,160 @@
+
+/* dashboard */
+
+.dashboard-section{
+    position: relative;
+    overflow: scroll;
+    top:50px;
+    
+    
+  }
+  
+  .dashboard-section .dashboard-text2{
+   
+    font-family: rock;
+    height: 600px;
+    overflow: scroll;
+    transition: all 0.3s ease; 
+    background-image: url(../images/banner-slide/Banner-1.jpg);
+    background-size: cover;
+    
+    
+  }
+  
+  .dashboard-section .dashboard-text2:hover h1{
+      color: black;
+      scale: 1.2;
+      
+      
+      font-weight: bolder;
+       
+    
+  }
+  
+  .dashboard-section .dashboard-text2 h1{
+    font-weight: 800;
+    transition: all 0.3s ease; 
+    color: black;
+    font-size: 8rem;
+    margin-top: 200px;
+    text-transform: uppercase;
+  }
+  
+  .dashboard-section .dashboard-text2 h1 span{
+    color: rgb(25, 246, 14);
+  }
+  .dashboard-section .dashboard-text1{
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .dashboard-section .dashboard-text1 ul li{
+    margin-top: 8rem;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+   
+    
+    
+  }
+  
+  .dashboard-section .dashboard-text1 ul li:hover{
+    
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    transform: translateY(-0.5rem);
+    cursor: pointer;
+  }
+  
+  .dashboard-section .dashboard-text1:hover ul li{
+    left: 0;
+  }
+  
+  .dashboard-section .dashboard-text1 ul li:hover a{
+    color: rgb(24, 216, 3);
+  }
+/* form */
+.product-form{
+    background: white   ;
+    height: 560px;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    border-radius: 20px;
+
+
+    
+}
+
+.product-form label{
+    margin-bottom: 10px;
+    border-bottom:2px solid black ;
+}
+
+
+.form-group input {
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 80%;
+    border-radius: 25px;
+    background-color: transparent;
+    border-color: black;
+    padding: 20px;
+}
+
+.form-group input:focus {
+    
+    border: 2px solid #3ac621;
+}
+
+.form-group input::placeholder{
+    color:black;
+}
+
+.form-group input:focus::placeholder{
+    color: #3ac621;
+}
+
+.form-group select{
+    width: 80%;
+    height: 60px;
+    border-radius: 25px;
+    font-size: 18px;
+    border:1px solid black;
+    background-color: transparent;
+    color: black;
+    
+}
+
+.form-group select:focus{
+
+    border: 2px solid #3ac621;
+    color: #3ac621;
+}
+
+.form-group textarea{
+    width: 80%;
+    font-size: 18px;
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.form-group textarea:focus{
+    border: 2px solid #3ac621;
+    color: #3ac621;
+}
+
+
+.button{
+    width: 200px;
+    
+}
+
+
+table{
+    font-size: 20px;
+    
+}

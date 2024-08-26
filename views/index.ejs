@@ -1,0 +1,427 @@
+<%- include("./common/header.ejs") %>
+
+<!-- banner section starts -->
+<section class="banner-section">
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption">
+            <div class="banner-content">
+              <h1>100% orignal</h1>
+              <h3>#<span>Fresh</span> from farms</h3>
+              <p></p>
+              <a href="/product" class="btn main-btn py-4 px-5"
+                >All products</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <div class="banner-content">
+              <h1>100% orignal</h1>
+              <h3>#performanceheepehchaan</h3>
+              <p></p>
+              <a href="product.html" class="btn main-btn">All products</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption">
+            <div class="banner-content">
+              <h1>100% orignal</h1>
+              <h3>#PerformanceheePehchaan</h3>
+              <p></p>
+              <a href="product.html" class="btn main-btn">All products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- banner section ends -->
+
+<!-- feature section starts -->
+<section class="feature-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-lg-3 mb5">
+        <div class="card features-box">
+          <div class="text-center">
+            <div class="features-icon-border">
+              <div class="features-icon">
+                <img src=".//images/feature-icon/ui-chat.svg" alt="" />
+              </div>
+            </div>
+            <div class="features-text">
+              <h3>24/7 <span>support</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 mb5">
+        <div class="card features-box">
+          <div class="text-center">
+            <div class="features-icon-border">
+              <div class="features-icon">
+                <img src=".//images/feature-icon/truck-loaded.svg" alt="" />
+              </div>
+            </div>
+            <div class="features-text">
+              <h3>Free <span>shipping</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 mb5">
+        <div class="card features-box">
+          <div class="text-center">
+            <div class="features-icon-border">
+              <div class="features-icon">
+                <img src=".//images/feature-icon/wheat.svg" alt="" />
+              </div>
+            </div>
+            <div class="features-text">
+              <h3>organically <span>made</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 mb5">
+        <div class="card features-box">
+          <div class="text-center">
+            <div class="features-icon-border">
+              <div class="features-icon">
+                <img src=".//images/feature-icon/lemon.svg" alt="" />
+              </div>
+            </div>
+            <div class="features-text">
+              <h3>from our <span>farms</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- feature section ends -->
+
+<!-- about section starts -->
+<section class="landing-about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-5 col-lg-6 col-sm-8">
+        <div class="about-content">
+          <h2>we providing services scince 1841 with Proud.</h2>
+          <div class="about-details">
+            <p class="fw-bold">
+              Farm fresh is a well-known brand that specializes in
+              fruits and vegetables , particularly whey fruits and vegetables. Here's an
+              overview:
+            </p>
+            <p>
+              Farm fresh is a well-known brand that specializes in
+              fruits and vegetables , particularly whey fruits and vegetables. Here's an
+              overview: Company Overview: Farm fresh is a company
+              focused on providing high-quality fruits and vegetables  and
+              nutritional products. They are known for their commitment to
+              transparency, offering products with minimal additives and
+              fillers. Product Range Their product range typically includes:
+              Whey fruits and vegetables: Farm fresh is particularly noted for its
+              whey fruits and vegetables concentrate and isolate products, which are popular
+              among fitness enthusiasts and athletes.
+            </p>
+            <p>
+              Other : They may also offer a variety of other
+               such as  (Branched-Chain Amino Acids), creatine,
+              and multivitamins, catering to different nutritional needs.
+            </p>
+
+            <a href="about.html" class="btn main-btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about section ends -->
+
+<!-- product section starts -->
+<section class="landing-product-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center p-5">
+        <h2 class="section-title">Our best seller products</h2>
+        <p class="section-subtitle">
+          Certainly! Here's a piece of random text that could be used on a
+          vegetable-selling website: "Welcome to our online market, where crisp
+          greens and vibrant colors meet convenience and freshness. From juicy
+          tomatoes that burst with flavor to tender lettuce leaves that crunch
+          with every bite, our vegetables are a testament to quality and care.
+          Sourced directly from local farms, each vegetable is handpicked at
+          peak ripeness and delivered straight to your doorstep. 
+        </p>
+      </div>
+    </div>
+    <div class="row mx-0">
+      <%if(frontproductdata.length>0){%>
+        <% for(var i=0; i<frontproductdata.length; i++){%>
+        <div class="col-lg-3 col-sm-6 mb-5">
+      
+        <div class="card product-card">
+          
+          <div class="product-img">
+            <img style=" height: 250px; width: 100%;"
+              src="<%= frontproductdata[i].productimage %>"
+            />
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <h3><%= frontproductdata[i].productname %></h3>
+            <span class="fw-bold"><%= frontproductdata[i].price %>/kg</span>
+          </div>
+          <div class="product-detail">
+            <a href="/details/<%= frontproductdata[i]._id %>" class="btn main-btn">View details</a>
+          </div>
+          
+        </div>
+          </div>
+          <%} %>
+      <% } else{ %>
+        record not found  
+    <%} %>
+      
+      </div>
+    </div>
+  </div>
+</section>
+<!-- product section ends -->
+
+<!-- testemonial section starts -->
+<section class="testemonial-section">
+  <div class="container">
+    <div class="row pb-5">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Our happy coustmer</h2>
+        <h6 class="section-subtitle">
+          Customers rave about Bigmuscle Nutrition for delivering pure,
+          effective  that help achieve fitness goals without
+          unnecessary additives or compromises.
+        </h6>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-md-10">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-sm-flex row">
+                <div class="profile-box col-sm-5">
+                  <img
+                    src="https://doorkisan.com/wp-content/uploads/2016/05/Lady-Finger-Okra-By-Door-Kisan-2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-7 card">
+                  <div class="desc-box">
+                    <p class="fst-italics">
+                      Bigmuscle Nutrition's Whey fruits and vegetables Isolate has been a
+                      game-changer for me. It mixes well, tastes great, and most
+                      importantly, I've seen noticeable gains in my muscle tone
+                      and recovery time!
+                    </p>
+                    <div class="my-4">
+                      <h4>Jecob oramson</h4>
+                      <p class="m-0 text-white">Happy Coustmers</p>
+                    </div>
+                    <img
+                      src="./images/testimonial/qoutes.svg"
+                      alt=""
+                      class="float-end"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-sm-flex row">
+                <div class="profile-box col-sm-5">
+                  <img
+                    src="https://doorkisan.com/wp-content/uploads/2016/05/Lady-Finger-Okra-By-Door-Kisan-2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-7 card">
+                  <div class="desc-box">
+                    <p class="fst-italics">
+                      I've been using Asitis  for months now, and they
+                      really help me push through tough workouts. The flavors
+                      are refreshing, and I feel less fatigued after intense
+                      training sessions.
+                    </p>
+                    <div class="my-4">
+                      <h4>Jhon Wick</h4>
+                      <p class="m-0 text-white">Happy Coustmers</p>
+                    </div>
+                    <img
+                      src="./images/testimonial/qoutes.svg"
+                      alt=""
+                      class="float-end"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-sm-flex row">
+                <div class="profile-box col-sm-5">
+                  <img
+                    src="https://doorkisan.com/wp-content/uploads/2016/05/Lady-Finger-Okra-By-Door-Kisan-2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-7 card">
+                  <div class="desc-box">
+                    <p class="fst-italics">
+                      I was skeptical about taking creatine, but Asitis
+                      Nutrition's Creatine Monohydrate dissolves easily and has
+                      helped me increase my strength and endurance. Definitely a
+                      staple in my routine now!
+                    </p>
+                    <div class="my-4">
+                      <h4>Josh herling</h4>
+                      <p class="m-0 text-white">Happy Coustmers</p>
+                    </div>
+                    <img
+                      src="./images/testimonial/qoutes.svg"
+                      alt=""
+                      class="float-end"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testemonial section ends -->
+
+<!-- gallery section starts -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center pb-5">
+        <h2 class="section-title">Our gallary</h2>
+        <p class="section-subtitle">
+          Explore Bigmuscle Nutrition's diverse gallery of products, from
+          premium whey fruits and vegetables isolates to essential  and powerful creatine
+          , designed to support your fitness journey with quality and
+          purity.
+        </p>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="images/gallery/g1.jpg">
+          <img
+            src="images/gallery/g1.jpg"
+            class="img-fluid rounded-3"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="images/gallery/g2.jpg">
+          <img
+            src="images/gallery/g2.jpg"
+            class="img-fluid rounded-3"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="images/gallery/g3.jpg">
+          <img
+            src="images/gallery/g3.jpg"
+            class="img-fluid rounded-3"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="images/gallery/g4.jpg">
+          <img
+            src="images/gallery/g4.jpg"
+            class="img-fluid rounded-3"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="images/gallery/g-6.jpg">
+          <img
+            src="images/gallery/g-6.jpg"
+            class="img-fluid rounded-3"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a href="images/gallery/g5.jpg">
+          <img
+            src="images/gallery/g5.jpg"
+            class="img-fluid rounded-3"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- gallery section ends -->
+<%- include("./common/footer.ejs") %>

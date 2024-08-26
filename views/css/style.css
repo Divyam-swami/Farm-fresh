@@ -1,0 +1,599 @@
+@font-face {
+  font-family: rock;
+  src: url(../fonts/HighSchoolUsaSans-52vx.ttf);
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+body,
+html {
+  font-size: 10px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+/* general css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-family: rock;
+}
+
+h1 {
+  font-size: 9rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: black;
+}
+
+h2 {
+  font-size: 4.7rem;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 3.1rem;
+  color: white;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+embed,
+iframe,
+img,
+object {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button {
+  text-decoration: none;
+  outline: 0;
+}
+
+li a {
+  color: white;
+}
+
+a:hover,
+button:hover {
+  transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(24, 216, 3);
+}
+
+.main-btn {
+  position: relative;
+  color: white;
+  background: linear-gradient(to right, #3ac621, #3ac621);
+  z-index: 2;
+  overflow: hidden;
+  border: 0.2rem solid white;
+  border-radius: 3.5rem;
+  text-transform: uppercase;
+  padding: 1rem 3.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.main-btn:hover {
+  background: white;
+  color: #3ac621;
+  border-color: #3ac621;
+  
+}
+
+section {
+  padding: 5rem 0;
+}
+.section-title {
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 2rem;
+}
+
+.section-subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-width: 40%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about .banner-section,
+.product .banner-section,
+.gallary .banner-section,
+.contact .banner-section {
+  background: url(../images/banner-slide/top-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  min-height: auto;
+}
+
+/* navbar */
+.header {
+  width: 100%;
+  top: 2rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.header .navbar {
+  background: url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem, 5rem;
+}
+
+.header .navbar-brand img{
+  width: 10rem;
+  margin: -0.1rem;
+  border-radius: 10px;
+  margin-left: 6rem;
+  height: 60px;
+  
+}
+
+.header .navbar-nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem, 2rem;
+  font-family: rock;
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active {
+  color: rgb(24, 216, 3);
+}
+
+.header .navbar-toggler {
+  color: white;
+  font-size: 2rem;
+  height: 2.7rem;
+  padding: 0;
+  margin-right: 2rem;
+}
+
+.header .header_right span {
+  color: rgb(24, 216, 3);
+  display: block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 6rem;
+}
+
+.header .header_right .phone-no {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.header-scrolled {
+  position: fixed;
+  top: -0.4rem;
+  left: 0;
+  right: 0;
+  width: 85%;
+  z-index: 999;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* banner section */
+.banner-section {
+  background: url(../images/banner-slide/Banner-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.banner-section .carousel-item {
+  padding: 3rem 0;
+  height: 80vh;
+}
+
+.banner-section .carousel-caption {
+  top: 30%;
+  bottom: 0;
+  left: 3%;
+  right: 0;
+  text-align: left;
+  width: 100%;
+}
+.banner-section .carousel-caption h1{
+  font-size: 10rem;
+color: black;
+}
+.banner-section .carousel-caption h3 {
+  padding: 0.5rem, 1.5rem;
+  background: black;
+  display: inline;
+  font-size: 6rem;
+}
+
+.banner-section .carousel-caption h3 span {
+  color: rgb(24, 216, 3);
+}
+
+.banner-section .carousel-caption p {
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
+
+/* feature section */
+.feature-section .features-box {
+  background-color: transparent;
+  border: 0.15rem solid rgb(190, 190, 190);
+  padding: 8rem 0;
+  margin: 2rem 0;
+  transition: all 0.3s;
+}
+
+.feature-section .features-icon-border {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 0.3rem solid rgb(190, 190, 190);
+  padding: 1.3rem;
+  display: inline-block;
+}
+
+.feature-section .features-box .features-icon {
+  height: 6.5rem;
+  width: 6.5rem;
+  background-color: rgb(190, 190, 190);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-section .features-box .features-icon img {
+  width: 3.7rem;
+  height: 3.7rem;
+}
+
+.feature-section .features-box h3 {
+  margin-top: 2rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: black;
+}
+
+.feature-section .features-box h3 span {
+  color: rgb(24, 216, 3);
+}
+
+.features-box:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.features-box:hover h3 {
+  color: white;
+}
+
+/* .features-box:hover h3 span {
+    color: white;
+  } */
+
+.features-box:hover .features-icon-border {
+  border-color: grey;
+}
+
+/* about section */
+.landing-about-section {
+  background: url(../images/_58a1f69c-e0c2-467f-a6ab-6b02083cdb5d.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 9rem 0;
+  box-shadow: 5px 5px 20px rgb(168, 168, 168);
+}
+
+.landing-about-section p {
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* product section */
+.landing-product-section .product-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0.2rem solid white;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.landing-product-section .product-card .product-img {
+  margin-bottom: 7rem;
+  text-align: center;
+}
+
+.landing-product-section .product-card h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.landing-product-section .product-card span {
+  font-size: 1.3rem;
+  font-weight: 6rem;
+  text-transform: uppercase;
+  color: grey;
+  margin-right: 0.5rem;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.landing-product-section .product-card .product-detail {
+  position: absolute;
+  bottom: -48rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 18rem 0.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+  border-radius: 25px;
+}
+
+.landing-product-section .product-card:hover .product-detail {
+  bottom: 0px;
+}
+
+/* testemonial section */
+.testemonial-section {
+  background-color: black;
+  padding-bottom: 8rem;
+  cursor: pointer;
+}
+
+.testemonial-section h2 {
+  color: white;
+}
+
+.testemonial-section h6 {
+  color: white;
+}
+
+.testemonial-section .carousel-indicators {
+  bottom: -6rem;
+}
+
+.testemonial-section .carousel-indicators button {
+  background-color: black;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+
+.testemonial-section .card {
+  background: linear-gradient(to right, #65ec11, rgb(43, 43, 43));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: right;
+  padding: 5rem 5rem 5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: 0.1rem solid transparent;
+}
+
+.testemonial-section .profile-box {
+  padding: 1.8rem;
+  background-color: #03262c;
+  border-radius: 0 0 0 0.5rem;
+}
+
+.testemonial-section .profile-box img {
+  border-radius: 0.6rem 3.1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testemonial-section .desc-box {
+  padding-left: 2.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.testemonial-section:hover .desc-box {
+  color: white;
+}
+/* gallary section */
+.gallery-section img {
+  height: 320px;
+  width: 100%;
+  object-fit: fill;
+  transition: all 0.3s ease;
+}
+
+.gallery-section img:hover {
+  transform: translateY(-20px);
+  z-index: 4;
+}
+
+/* footer section */
+.footer-wrapper {
+  background: url(../images/footer-bg/footer_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 15rem;
+  padding-bottom: 0;
+  
+}
+
+.footer-wrapper h5 {
+  color: white;
+  font-size: 2.2rem;
+
+  margin-bottom: 1.25rem;
+}
+
+.footer-wrapper ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+.footer-wrapper .company-details {
+  font-size: 1.4rem;
+}
+
+.footer-wrapper .contact-info li a {
+  color: grey;
+  font-size: 1.6rem;
+}
+
+.footer-wrapper .link-widget li a,
+.footer-wrapper p {
+  color: rgb(206, 206, 206);
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer-wrapper .link-widget li a:before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.footer-wrapper .link-widget li a:hover {
+  margin-left: 0.25rem;
+  color: rgb(24, 216, 3);
+}
+
+.footer-wrapper .social-network a {
+  width: 3.6rem;
+  height: 3.6rem;
+  padding-top: .5rem;
+  margin: 0.5rem;
+  display: inline-block;
+  border: 0.25rem solid grey;
+  text-align: center;
+  color: grey;
+  font-size: 2rem;
+  border-radius: 100%;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.footer-wrapper .social-network a:hover {
+  background-color: rgb(24, 216, 3);
+  border-color: rgb(24, 216, 3);
+  color: white;
+  box-shadow: 0 0.25rem 0.9375rem 0 rgb(0 0 0/10%);
+  transform: translateY(-0.18rem);
+}
+
+.footer-wrapper .form-control {
+  font-size: 1.6rem;
+  color: white;
+  border-radius: 25px;
+}
+
+.footer-wrapper .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  color: white;
+  border-color: rgb(24, 216, 3);
+}
+
+.form-btn{
+  background-color: #3ac621;
+}
+
+.footer-wrapper .copyright-section {
+  background-color: rgb(24, 216, 3);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-wrapper .copyright-section p {
+  
+  padding: 3rem 0;
+  color: white;
+  line-height: 0;
+}
+
+.footer-wrapper .copyright-section a {
+  color: #03262c;
+  font-weight: 600;
+}
